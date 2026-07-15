@@ -1,0 +1,104 @@
+[
+  {
+    "scenario": "Valid login",
+    "username1": "standard_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": ""
+  },
+  {
+    "scenario": "username1 is empty",
+    "username1": "",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: username1 is required"
+  },
+  {
+    "scenario": "Password is empty",
+    "username1": "standard_user",
+    "password": "",
+    "expectedErrorMessage": "Epic sadface: Password is required"
+  },
+  {
+    "scenario": "username1 and password are empty",
+    "username1": "",
+    "password": "",
+    "expectedErrorMessage": "Epic sadface: username1 is required"
+  },
+  {
+    "scenario": "Invalid username1",
+    "username1": "invalidUser",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "Incorrect password",
+    "username1": "standard_user",
+    "password": "wrongPassword",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "username1 with leading and trailing spaces",
+    "username1": " STANDARD_USER ",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "username1 as email",
+    "username1": "standard_user@gmail.com",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "Email with dot",
+    "username1": "test.user@gmail.com",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "Numeric username1",
+    "username1": "123456",
+    "password": "123456",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "Script injection",
+    "username1": "test<script>",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "SQL injection",
+    "username1": "' OR '1'='1",
+    "password": "' OR '1'='1",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "SQL comment injection",
+    "username1": "admin'--",
+    "password": "anything",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "Very long username1",
+    "username1": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "Very long password",
+    "username1": "standard_user",
+    "password": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "username1 contains spaces",
+    "username1": "user name",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  },
+  {
+    "scenario": "username1 with special characters",
+    "username1": "test@#$%",
+    "password": "Pass@123",
+    "expectedErrorMessage": "Epic sadface: username1 and password do not match any user in this service"
+  }
+]

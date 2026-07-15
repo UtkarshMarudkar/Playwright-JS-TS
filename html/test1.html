@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playwright</title>
+</head>
+<body>
+
+    <button onclick="showAlert()">Show Alert</button>
+
+    <a href="https://www.amazon.com" onclick="goToAmazon(event)">Go to Amazon</a>
+
+    <script>
+        function showAlert() {
+            setTimeout(() => {
+                alert("Hello! This is a simple alert.");
+            }, 1000);
+        }
+
+        function goToAmazon(event) {
+            event.preventDefault();
+
+            setTimeout(() => {
+                window.open("https://www.amazon.com", "_blank");
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>

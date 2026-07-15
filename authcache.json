@@ -1,0 +1,135 @@
+{
+  "cookies": [
+    {
+      "name": "funnelVariant",
+      "value": "RESPONSIVE",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1784058165.71451,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "country",
+      "value": "IND",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1783539765.714683,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "currency",
+      "value": "INR",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1783539765.714827,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "defaultlanguage",
+      "value": "en",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1783539765.714861,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "language",
+      "value": "en",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1783539765.714882,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "selectedCurrency",
+      "value": "INR",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1783539765.714913,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_sz",
+      "value": "F6AFDBC9A3E6B98807B0529E9DC3CA96~YAAQTKXBF9xtdB2fAQAAfLUaPgALHEEP/cLGaxsBAJuXcxhx5QyHcRWtYYuxvsoEcy/N9WClfOrjZKmGg6ReimedcnxG7luVz3a7bct7XLafZ3YHzO9p7cOOupwl2ZLTRDMXnrl4pvGYGC6KhK0RgW/tYle6uNYIN+VJlvZ/Yp8XjJmBhjgiTguel7rUujrGW6ZUMdfufkMwjXI03PNV2ysCGtxQTQ/ZJ4frCBB+l/A6AbJr8z91tnKNKdu1jouKt1V/SUhUwEGtEpk54xr3nElMtaHrRBHT+u70WrlAXVG9Lq6+naD4A3xOl1GgBnNy3DdTVw9S00O8umAXO1YJiAwjOykYyvlMxXH2dK3+wFhdK9qjTMCODcgUEJjNySqRkQY1zm476T/dKK5YV7FZRlcDI+zBuYtyJwNEywfOp0bL2d2TlkdL~3424834~3683140",
+      "domain": ".redbus.in",
+      "path": "/",
+      "expires": 1783467765.715061,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rayHomeAB",
+      "value": "V0",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1788637365,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "freeSearchAB",
+      "value": "V1",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1788637365,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "abExpsVariantsForMri",
+      "value": "[]",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_abck",
+      "value": "E8C5A458726F9F81C9309C39120E9D86~-1~YAAQTKXBF/htdB2fAQAAPLYaPhBj3gX1RCLVzDmX5SmaR2DJypKL74ET1No9cHutm9oh25OsVedzonwI/LC1o/1UUkIyDZj4RV3+VNGaI6pLPQ5UHnSRJlOoZpTGRnHxVmbYor719msSmsiARkBeaM8qNzptIyzB+b5PG99iAo+t8McSrI1v1difLTPxdosZ9O6PFuqkIkYIg0sCF2REzCmHMMFFEKZn4LJUJBQFe91IZBgd6dKBjuha74BmOzSH7jGxP4jpaH+jqpbY5tV49uUR6TC92geQwo0Rd5O71sBFCpJfCrpxKZak6dDUQaisS5ZSiC6XXaGoAfRtFxGrfV1tPxOrG9vIuw61587aLGUUPJ76uVwQK8u5znf4OlnP0kHbDZkTCIpjqDFywBgmPx42qf2cw1ya3aEl+KRWUSjxORzCjUQygqhOb6YnQcmnXzl6acVPpTJwM/RUGU1BZlNJBX932QRPKMsc2xrw9Q==~-1~-1~-1~-1~-1",
+      "domain": ".redbus.in",
+      "path": "/",
+      "expires": 1814989365.911266,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ak_bmsc",
+      "value": "3843B5F3C62E04096DDEF5A6D623D93B~000000000000000000000000000000~YAAQTKXBF/ltdB2fAQAAPLYaPgA2mVxr+7/m5tVdWNw+jQP9tZQxpY//llUCwdwBOON+1uOzhB4b/UpV39048BWgz6Obpseml/Gqy2QxMmW+AjypEDkFrxGmXycewcXx1UPLHccbTHjbc1gISJ3E5Hgj5D45YVQGMfyhlYNzbbkqJcyujJ+jOWv3Jckrf9bOlPiL6tXc8B8Le1/lNdn/QQ8CzIcYz+VD1vRwOW+Pqt2TYV9YprUMIy+5zrnYDo69i4RR41+ijhX/IMUeYpNBZG+WDOFwK4UqszVRW1nwd+zazdaf765ipmR4maj3WJZnHDID/+9bZTNw2XwQzABD+/tOMR9nZkYZ6SE0a1qjpSYui8OKOia8uLjd9MwD64Sv1UOVJl3gIaihHsgjTIUtkaiWd4Ctf8ri2KkKGkkvH6FQth57R3g5tcKQ+pbAjcLcfizjmzhcl4i+HpbzH1PlTSA=",
+      "domain": ".redbus.in",
+      "path": "/",
+      "expires": 1783460565.911398,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "channel",
+      "value": "DWEB",
+      "domain": "www.redbus.in",
+      "path": "/",
+      "expires": 1818013366.208035,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
