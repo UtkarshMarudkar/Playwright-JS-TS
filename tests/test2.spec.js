@@ -1,13 +1,13 @@
 
 import { test, expect } from "playwright/test";
-
+import { LoginPage } from "../Pages/loginpage";
 
 test.beforeEach( async({page}) =>{
     await page.goto("https://www.saucedemo.com"),{timeout: 60000};
 })
 
 test("my second test", async({page}) => {
-
+    let loginPageObject = new LoginPage(page);
     // goto - open the page
     // playwright element locator default 30 sec
     // playwright asserttions default 5 sec 
@@ -15,13 +15,12 @@ test("my second test", async({page}) => {
     // Locator - xpath and css selector
 
 
-    // 
+    // let loginPageObject = new LoginPage(page);
 
     //await page.goto("https://www.saucedemo.com"),{timeout: 60000};
-    expect(await page.getByPlaceholder("Username")).toBeVisible();
-    await page.getByPlaceholder("Username").fill("Abcd");
-    expect(await page.getByPlaceholder("Password")).toBeVisible();
-    await page.getByPlaceholder("Password").fill("password");
+    loginPageObject.enterUserName("abcd");
+    loginPageObject.enterPassword("abcd");
+    
     expect(await page.locator("[value='Login']")).toBeVisible();
     await page.locator("[value='Login']").click();
     const errmsg = await page.locator("[data-test='error']").textContent("")
@@ -32,7 +31,7 @@ test("my second test", async({page}) => {
     // or 2nd way
 
     expect(await page.locator("[data-test='error']")).toBeVisible();
-    expect.soft(await page.locator("[data-test='error']")).toHaveText("Epic sadface: Username and password do not match any user in this service");
+    expect.soft(await page.locator("[data-test='error']")).toHaveText("Epic sadface: Username is required");
     
     // two types of assertions
     // 1. Hard assertion = If test case has failed then playwright not able to run further script
@@ -44,11 +43,10 @@ test("my second test", async({page}) => {
 
 
 test("second TC2", async({page})=> {
+    let loginPageObject = new LoginPage(page);
     //await page.goto("https://www.saucedemo.com"),{timeout: 60000};
-    expect(await page.getByPlaceholder("Username")).toBeVisible();
-    await page.getByPlaceholder("Username").fill("standard_user");
-    expect(await page.getByPlaceholder("Password")).toBeVisible();
-    await page.getByPlaceholder("Password").fill("secret_sauce");
+    await loginPageObject.enterUserName("standard_user");
+    await loginPageObject.enterPassword("secret_sauce");
     expect(await page.locator("[value='Login']")).toBeVisible();
     await page.locator("[value='Login']").click();                                  // .hover - will scrolldown - focous.
 
@@ -60,7 +58,7 @@ test("second TC2", async({page})=> {
     await page.locator("[data-test='product-sort-container']").selectOption({value: "hilo"}); // index 2 or 3      // or value = "za" or "hilo" or label = "Name (Z to A)"
     
     await page.locator("[data-test='inventory-item']").filter({hasText: "Sauce Labs Bolt T-Shirt"}).getByText("Add to cart").click();   
-    await page.waitForTimeout(15000);
+    await page.waitForTimeout(4000);
 
 })
 
