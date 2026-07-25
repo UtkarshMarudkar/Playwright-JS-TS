@@ -3,18 +3,18 @@ export class LoginPage{
 
     constructor(page){
         this.page = page;
-        this.username = page.getByPlaceholder("Username");
-        this.password = page.getByPlaceholder("Password");
+        // this.username = page.locator("Username");
+        // this.password = page.locator("Password");
 
+        this.username = page.locator('[data-test="username"]');   
+        this.password = page.locator('[data-test="password"]');   
     }
 
-  async enterUserName(username) {
-        await expect(this.username).toBeVisible();
+    async enterUserName(username) {
         await this.username.fill(username);
     }
 
     async enterPassword(password) {
-        await expect(this.password).toBeVisible();
         await this.password.fill(password);
     }
 }
