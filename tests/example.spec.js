@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import users from '../test-data/users.json' with { type:"json" };
 
 for (let user of users) {
-  test(`test ${users.username}`, async ({page}) => {
+  test(`test ${user.username}`, async ({page}) => {
     await page.goto('https://www.saucedemo.com/');
     await page.locator('[data-test="username"]').click();
     await page.locator('[data-test="username"]').fill('users.username');
